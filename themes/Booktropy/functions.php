@@ -1,6 +1,23 @@
 <?php
 
 //*****FUNCIONES******/
+
+    //Se inica al activar el tema.
+    function booktropy_setup(){
+        //Habilitar opción de imagenes destacadas.
+        add_theme_support('post-thumbnails');
+
+        //Agregando imagenes con tamaños definidos.
+        add_image_size('square', 350, 350, true);
+        add_image_size('portrait', 350, 724, true);
+        add_image_size('cajas', 400, 375, true);
+        add_image_size('mediano', 700, 400, true);
+        add_image_size('blog', 966, 644, true);
+        
+    }
+    add_action('after_setup_theme','booktropy_setup');
+
+
     //Función menus, se puede agregar más usando el array. 
     function booktropy_menus(){
         //array de menus
