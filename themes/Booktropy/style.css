@@ -277,5 +277,65 @@ hr{
 }
 
 .no-sidebar .contenido-principal{
-    flex: 0 1 800px;
+    flex: 0 1000px;
+}
+
+
+/***BOTONES***/
+a.boton{
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.boton.boton-obtener{
+    color: var(--colorPrimario);
+    font-family: var(--fuentePrincipal);
+    background-color: white;
+    border: 2px solid var(--colorPrimario);
+    margin: 1rem 0;
+}
+
+
+/**LIBROS**/
+.lista-libros{
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .lista-libros{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+/**CARDS**/
+.card{
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .card{
+        flex: 0 0 calc(33% - 2rem);
+    }
+}
+
+.card .contenido{
+    padding: 1rem 0;
+}
+
+.card .contenido h4{
+    line-height: 1;
+    color: var(--titulos);
+    margin: 0.5rem 0;
+
+}
+
+.card .contenido p{
+    font-weight: 700;
+    margin: 5px 0;
+    font-size: 1.5rem;
+    color: var(--colorTexto);
+    margin-bottom: 15px;
 }

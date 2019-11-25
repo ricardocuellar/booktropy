@@ -2,6 +2,11 @@
 
 //*****FUNCIONES******/
 
+    //Consultas que se reutilizarán.
+    require get_template_directory().'/inc/queries.php';
+
+
+
     //Se inica al activar el tema.
     function booktropy_setup(){
         //Habilitar opción de imagenes destacadas.
@@ -9,10 +14,11 @@
 
         //Agregando imagenes con tamaños definidos.
         add_image_size('square', 350, 350, true);
-        add_image_size('portrait', 350, 724, true);
+        add_image_size('portrait', 250, 324, true);
         add_image_size('cajas', 400, 375, true);
         add_image_size('mediano', 700, 400, true);
         add_image_size('blog', 966, 644, true);
+        add_image_size('libro',650, 724, true);
         
     }
     add_action('after_setup_theme','booktropy_setup');
