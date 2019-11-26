@@ -14,6 +14,7 @@
 
         <main class="contenedor pagina seccion no-sidebar">
         
+        <!--Se manda a llamar a la función booktropy_lista_libros() que se almacena en queries.php-->
         <?php booktropy_lista_libros(); ?>
         </div>
 

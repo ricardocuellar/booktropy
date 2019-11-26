@@ -5,7 +5,7 @@
 
         <p class="copyright">Términos y condiciones. <?php echo get_bloginfo('name');?></p>
 
-        <?php //Menú de navegación
+        <?php //Menú de navegación para footer.
                 $args = array(
                     'theme_location' => 'menu-principal',
                     'container' => 'nav',

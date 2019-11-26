@@ -1,5 +1,5 @@
 <?php
-
+//Query del catalogo de libros
     function booktropy_lista_libros(){ ?>
 
         <ul class="lista-libros">
@@ -11,6 +11,7 @@
                     'order' => 'ASC'
                 );
 
+                //Mostramos los libros en un catalogo
                 $libros = new WP_Query($args);
                 while( $libros -> have_posts()): $libros->the_post(); ?>
 

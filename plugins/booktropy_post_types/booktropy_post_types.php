@@ -12,6 +12,7 @@
 if(!defined('ABSPATH')) die(); //No deja ver propiedades de este archivo
 
 // Registrar Custom Post Type
+// Se realiza el post_type para poder subir libros desde CMD
 function booktropy_libros_post_type() {
 
 	$labels = array(
