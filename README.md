@@ -8,3 +8,7 @@ Código fuente del template Booktropy.
 * Se implemento un Post_type para agregar, eliminar y editar libros. 
 * Se muestra el contenido de cada libro
 * Se descarga el archivo del libro al presionar el botón. 
+
+## Ver proyecto en: 
+
+www.ricardocuellar.mx
