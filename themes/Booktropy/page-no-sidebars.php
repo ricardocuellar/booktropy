@@ -9,6 +9,7 @@ get_header(); ?>
     <div class="contenido-principal">
         <?php get_template_part('template-parts/paginas'); ?>
     </div>
+    
 
 </main>
 

@@ -18,7 +18,7 @@
         add_image_size('cajas', 400, 375, true);
         add_image_size('mediano', 700, 400, true);
         add_image_size('blog', 966, 644, true);
-        add_image_size('libro',650, 724, true);
+        add_image_size('libro',450, 524, true);
         
     }
     add_action('after_setup_theme','booktropy_setup');
@@ -60,6 +60,8 @@
 
     //Hooks styles y scripts
     add_action('wp_enqueue_scripts','booktropy_scripts_styles');
+
+    add_filter('acf/settings/show_admin', '__return_false');
 
 
     

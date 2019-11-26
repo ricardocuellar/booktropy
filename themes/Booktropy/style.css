@@ -32,7 +32,7 @@ html{
 body{
     font-size: 18px; 
     line-height: 2; 
-    font-family: var(--fuenteTexto);
+    font-family: var(--fuentePrincipal);
   }
 
 *, *:before, *:after{
@@ -51,6 +51,7 @@ h1,h2,h3,h4{
 
 h1{
     font-size: 6rem;
+    font-weight: bold;
 }
 
 h2{
@@ -68,6 +69,8 @@ h4{
 /*GLOBALES*/
 a{
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul{
@@ -88,11 +91,22 @@ img{
 
 }
 
+.contenedor-principal{
+    max-width: 600px;
+    width: 95%;
+    margin: 0 auto;
+}
+
 hr{
     border: 1px solid var(--colorPrimario);
 }
 
+
 /***UTILIDADES**/
+.alinearCenter{
+    margin: 2.5rem 0;
+}
+
 .text-center{
     text-align: center;
 }
@@ -110,6 +124,49 @@ hr{
     background: linear-gradient(321.84deg, #1d7693 0%, #29bbc6 100%);
     padding: 1.5rem 0;
 }
+
+
+.site-header h1{
+    color: white;
+    font-weight: bold;
+}
+
+.site-header h3{
+    color: white;
+
+}
+
+.site-header p{
+    color: white;   
+}
+
+
+
+.site-header-hero{
+    background: linear-gradient(321.84deg, #1d7693 0%, #29bbc6 100%);
+    padding: 1.5rem 0;
+}
+
+.hero{
+    padding: 10rem 0;
+}
+
+
+.site-header-hero h1{
+    color: white;
+    font-weight: bold;
+}
+
+.site-header-hero h3{
+    color: white;
+
+}
+
+.site-header-hero p{
+    color: white;   
+}
+
+
 
 .barra-navegacion{
     display: flex;
@@ -260,6 +317,7 @@ hr{
         justify-content: space-between;
     }
     .con-sidebar .contenido-principal{
+        
         flex: 0 0 calc(65% - 2rem);
     }
 
@@ -282,10 +340,13 @@ hr{
 
 
 /***BOTONES***/
+
 a.boton{
     padding: 10px;
     margin: 10px 0;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
 }
 
 .boton.boton-obtener{
@@ -294,7 +355,24 @@ a.boton{
     background-color: white;
     border: 2px solid var(--colorPrimario);
     margin: 1rem 0;
+    display: inline-block;
 }
+
+.boton.boton-descarga{
+    color: var(--colorPrimario);
+    font-family: var(--fuentePrincipal);
+    background-color: white;
+    border: 3px solid var(--colorPrimario);
+    padding: 2rem 5rem;
+    margin: 2rem 0; 
+}   
+
+@media (min-width: 768px) {
+    .boton.boton-descarga{
+        padding: 2rem 12rem;
+    }
+}
+
 
 
 /**LIBROS**/
@@ -339,3 +417,71 @@ a.boton{
     color: var(--colorTexto);
     margin-bottom: 15px;
 }
+
+/***SIDEBAR***/
+.sidebar p{
+    margin: 0;
+    font-family: var(--fuenteTexto);
+    
+}
+
+.sidebar .autor{
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+}
+
+.sidebar .categoria{
+    font-size: 1.5rem;
+    font-family: var(--fuentePrincipal);
+    
+}
+
+@media (min-width: 768px) {
+    .sidebar .contenido-principal{
+        justify-content: center;
+    }   
+}
+
+/**CARDS INICIO**/
+
+
+
+@media (min-width: 768px) {
+    .info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.card-info{
+    margin-bottom: 4rem;
+}
+
+.card-info img{
+    width: 50%;
+}
+@media (min-width: 768px) {
+    .card-info{
+        flex: 0 0 calc(50% - 2rem);
+    }
+    .card-info img{
+        width: 50%;
+    }
+}
+
+.card-info .contenido{
+    padding: 1rem 0;
+}
+
+
+
+.card-info .contenido p{
+    font-weight: 700;
+    margin: 5px 0;
+    font-size: 1.5rem;
+    color: var(--colorTexto);
+    margin-bottom: 15px;
+}
+

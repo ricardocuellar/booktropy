@@ -12,10 +12,11 @@
 <header class="site-header">
     <div class="contenedor">
         <div class="barra-navegacion">
+        <a href="<?php echo home_url(); ?>">
             <div class="logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/entropy_logo.png" alt="Logo Entropy">          
             </div>
-
+            </a>
             <?php //Menú de navegación
                 $args = array(
                     'theme_location' => 'menu-principal',
