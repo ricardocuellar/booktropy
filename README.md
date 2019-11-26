@@ -12,3 +12,7 @@ Código fuente del template Booktropy.
 ## Ver proyecto en: 
 
 www.ricardocuellar.mx
+
+En caso de problemas de DNS o redirección a otra página entra a: 
+
+http://3.136.81.177/ 
